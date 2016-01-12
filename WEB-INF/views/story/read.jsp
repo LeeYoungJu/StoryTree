@@ -31,5 +31,7 @@
 			</div>			
 		</c:forEach>		
 	</div>
+	<span style="display:none;">test</span>
+	
 </body>
 </html>
