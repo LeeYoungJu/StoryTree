@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016. 1. 2 ???? 7:11:52 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.yjlee.storyTree.entity.StoryEntity" table="story">
+        <id name="seq" type="int">
+            <column name="STORY_SEQ" />
+            <generator class="native" />
+        </id>        
+        <property name="rseq" type="int" >
+            <column name="ROOT_SEQ" />
+        </property>
+        <property name="pseq" type="int">
+            <column name="PARENT_STORY_SEQ" />
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="imgName" type="java.lang.String">
+            <column name="IMG_NAME" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="COMMENT" />
+        </property>
+        <property name="regId" type="java.lang.String">
+            <column name="REG_ID" />
+        </property>
+        <property name="regDt" type="java.util.Date">
+            <column name="REG_DT" />
+        </property>
+    </class>
+</hibernate-mapping>
